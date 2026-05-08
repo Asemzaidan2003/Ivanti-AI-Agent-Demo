@@ -3,6 +3,6 @@ import {createIncident} from '../controllers/createIncident.js'
 
 const router = express.Router();
 
-router.get("/create" , createIncident);
+router.post("/create" , createIncident);
 
 export default router;

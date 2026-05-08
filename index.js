@@ -4,6 +4,7 @@ import cors from "cors";
 
 import userRout from "./backend/routs/user.rout.js";
 import incidentRout from "./backend/routs/incident.rout.js"
+import ServiceRequestRout from "./backend/routs/SR.rout.js"
 
 dotenv.config();
 
@@ -31,3 +32,4 @@ app.listen(port, async () => {
 
 app.use("/api/user",userRout)
 app.use("/api/incident",incidentRout)
+app.use("/api/sr",ServiceRequestRout)
